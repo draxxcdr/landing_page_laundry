@@ -1,0 +1,23 @@
+.bg-primary {
+    background-color: #4CAE75;
+}
+
+.bg-secondary {
+    background-color: #3e7a59;
+}
+
+.text-primary {
+    color: #4AAB75;
+}
+
+.text-secondary {
+    color: #3e7a59;
+}
+
+.border-primary {
+    border-color: #4CAE75;
+}
+
+.border-secondary {
+    border-color: #3e7a59;
+}

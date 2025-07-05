@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Masuk atau Daftar akun di Dry Laundry untuk menikmati layanan laundry kualitas premium dengan mudah.">
+    <meta name="author" content="Dry Laundry">
+    <meta name="theme-color" content="#4CAE75">
+
+    <!-- Favico -->
+    <link rel="shortcut icon" href="assets/svg/fav.svg" type="image/x-icon">
+
+    <!-- Title -->
+    <title>Masuk & Daftar - Dry Laundry</title>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/auth.css">
+    
+    <!-- tailwind.auth.js-->
+    <script src="assets/js/tailwind.auth.js"></script>
+
+    <!-- Vendor Files -->
+    <link rel="stylesheet" href="assets/css/Poppins.css"> <!-- Fonts | Poppins -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-6.5.1-web/css/all.min.css"> <!-- Font Awesome -->
+    <link href="assets/vendor/aos-master/dist/aos.css" rel="stylesheet"> <!-- Aos -->
+
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary"><i class="fas fa-leaf mr-2"></i>Dry Laundry</a>
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="index.html"
+                    class="bg-primary text-white px-5 py-2 rounded-full whitespace-nowrap hover:bg-secondary transition duration-300">Beranda</a>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md">
+            <div class="container mx-auto px-6 py-4 space-y-2">
+                <a href="index.html"
+                    class="btn-primary block text-center bg-secondary text-white py-2 rounded-full">Beranda</a>
+            </div>
+        </div>
+    </header> <!-- End - Header -->
+
+    <main>
+        
+        <!-- Form Section -->
+        <section id="form-section" class="min-h-screen flex items-center justify-center py-20 bg-slate-50">
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-10" data-aos="fade-up">
+
+                    <!-- Toogle Switch Menu-->
+                    <div class="toggle-container mb-8">
+                        <button id="login-toggle" class="toggle-button">Masuk</button>
+                        <button id="register-toggle" class="toggle-button active">Daftar</button>
+                    </div>
+
+                    <div class="text-center mb-8">
+                        <h2 id="form-title" class="text-3xl font-bold text-gray-900">Buat Akun Baru</h2>
+                        <p id="form-subtitle" class="text-gray-600 mt-2">Daftar sekarang untuk memulai dengan Dry
+                            Laundry.</p>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form id="login-form" action="#" method="POST" class="hidden">
+                        <div class="space-y-5">
+                            <div>
+                                <label for="login-email" class="font-medium text-gray-700">Email</label>
+                                <div class="relative mt-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"><i
+                                            class="fas fa-envelope text-gray-400"></i></span>
+                                    <input type="email" id="login-email" name="email" required
+                                        class="outline-none w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition"
+                                        placeholder="contoh@email.com" autocomplete="off">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="login-password" class="font-medium text-gray-700">Password</label>
+                                <div class="relative mt-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"><i
+                                            class="fas fa-lock text-gray-400"></i></span>
+                                    <input type="password" id="login-password" name="password" required
+                                        class="outline-none password-input w-full pl-10 pr-10 py-2.5 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition"
+                                        placeholder="Masukkan password" autocomplete="offs">
+                                    <span
+                                        class="toggle-password absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer">
+                                        <i class="toggle-icon fas fa-eye-slash text-gray-400"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="w-full mt-8 bg-primary text-white font-semibold py-3 rounded-lg shadow-md hover:bg-secondary transition duration-300">Masuk</button>
+                        <p class="text-center text-sm text-gray-600 mt-8">
+                            Belum punya akun? <a href="#" id="show-register"
+                                class="font-medium text-primary hover:underline">Daftar di sini</a>
+                        </p>
+                    </form> <!-- End - Login Form -->
+
+                    <!-- Register Form -->
+                    <form id="register-form" action="#" method="POST">
+                        <div class="space-y-5">
+                            <div>
+                                <label for="fullname" class="font-medium text-gray-700">Nama Lengkap</label>
+                                <div class="relative mt-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"><i
+                                            class="fas fa-user text-gray-400"></i></span>
+                                    <input type="text" id="fullname" name="fullname" required
+                                        class="outline-none w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition"
+                                        placeholder="Masukkan nama lengkap" autocomplete="off">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="register-email" class="font-medium text-gray-700">Email</label>
+                                <div class="relative mt-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"><i
+                                            class="fas fa-envelope text-gray-400"></i></span>
+                                    <input type="email" id="register-email" name="email" required
+                                        class="outline-none w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition"
+                                        placeholder="contoh@email.com" autocomplete="off">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="register-password" class="font-medium text-gray-700">Password</label>
+                                <div class="relative mt-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"><i
+                                            class="fas fa-lock text-gray-400"></i></span>
+                                    <input type="password" id="register-password" name="password" required
+                                        class="outline-none password-input w-full pl-10 pr-10 py-2.5 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition"
+                                        placeholder="Buat password" autocomplete="off">
+                                    <span
+                                        class="toggle-password absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer">
+                                        <i class="toggle-icon fas fa-eye-slash text-gray-400"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="w-full mt-8 bg-primary text-white font-semibold py-3 rounded-lg shadow-md hover:bg-secondary transition duration-300">Daftar</button>
+                        <p class="text-center text-sm text-gray-600 mt-8">
+                            Sudah punya akun? <a href="#" id="show-login"
+                                class="font-medium text-primary hover:underline">Masuk di sini</a>
+                        </p>
+                    </form> <!-- End - Register Form -->
+
+                    <div id="social-login-section">
+                        <div class="my-6 flex items-center">
+                            <div class="flex-grow border-t border-gray-300"></div>
+                            <span id="social-text" class="mx-4 text-sm text-gray-500">Atau daftar dengan</span>
+                            <div class="flex-grow border-t border-gray-300"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <button type="button"
+                                class="w-full flex items-center justify-center py-2.5 border border-gray-300 rounded-lg hover:bg-gray-100 transition">
+                                <i class="fab fa-google text-red-500 mr-2"></i> Google
+                            </button>
+                            <button type="button"
+                                class="w-full flex items-center justify-center py-2.5 border border-gray-300 rounded-lg hover:bg-gray-100 transition">
+                                <i class="fab fa-facebook-f text-blue-600 mr-2"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> <!-- End - Form Section -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-6">
+            <div class="text-center text-gray-500 text-sm">
+                &copy; 2024 Dry Laundry. All Rights Reserved.
+            </div>
+        </div>
+    </footer> <!-- End - Footer -->
+
+    <!-- Vendor Files -->
+    <script src="assets/vendor/aos-master/dist/aos.js"></script> <!-- Aos -->
+
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>
