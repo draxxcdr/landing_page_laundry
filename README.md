@@ -10,7 +10,7 @@ Dry Laundry adalah sebuah landing page sederhana yang dibuat untuk keperluan lau
 - 
 📷 Screenshot
 
-Tampilan antarmuka dari website:
+Tampilan ui website:
 
 Screenshot 1:
 ![Screenshot 1](./screenshots/screenshot_1.PNG)
