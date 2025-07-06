@@ -21,7 +21,7 @@ Screenshot 2:
 🌐 Live Preview
 
 Lihat langsung hasilnya di sini:
-🔗 https://draxxcdr.github.io/landing_page_laundry/
+🔗 https://landing-page-laundry-ten.vercel.app/
 
 📦 Bahasa Pemerograman
 - HTML5
