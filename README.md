@@ -23,7 +23,7 @@ Screenshot 2:
 Lihat langsung hasilnya di sini:
 🔗 https://draxxcdr.github.io/landing_page_laundry/
 
-📦 Tech Stack
+📦 Bahasa Pemerograman
 - HTML5
 - Tailwind CSS v3
 - JavaScript
